@@ -22,7 +22,7 @@ Mientras que Kubernetes soporta más {{<glossary_tooltip text="runtimes de conte
 
 El contexto compartido de un Pod es un conjunto de namespaces de Linux, cgroups y, potencialmente, otras facetas de aislamiento, las mismas cosas que aíslan un contenedor Docker. Dentro del contexto de un Pod, las aplicaciones individuales pueden tener más subaislamientos aplicados.
 
-Los contenedores dentro de un Pod comparten dirección IP y puerto, y pueden encontrarse a través de `localhost`. También pueden comunicarse entre sí mediante comunicaciones estándar entre procesos, como semáforos de SystemV o la memoria compartida POSIX. Los contenedores en diferentes Pods tienen direcciones IP distintas y no pueden comunicarse por IPC sin [configuración especial](/es/docs /concepts/policy/pod-security-policy/).
+Los contenedores dentro de un Pod comparten dirección IP y puerto, y pueden encontrarse a través de `localhost`. También pueden comunicarse entre sí mediante comunicaciones estándar entre procesos, como semáforos de SystemV o la memoria compartida POSIX. Los contenedores en diferentes Pods tienen direcciones IP distintas y no pueden comunicarse por IPC sin [configuración especial](/en/docs/concepts/policy/pod-security-policy/).
 Estos contenedores normalmente se comunican entre sí a través de las direcciones IP del Pod.
 
 Las aplicaciones dentro de un Pod también tienen acceso a {{<glossary_tooltip text="volúmenes" term_id="volume">}} compartidos, que se definen como parte de un Pod y están disponibles para ser montados en el sistema de archivos de cada aplicación.
